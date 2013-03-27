@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.hs.Course">
+  <id column="courseId" name="courseId">
+   <generator class="assigned"/>
+  </id>
+  <property column="courseName" generated="never" lazy="false" name="courseName"/>
+ </class>
+</hibernate-mapping>

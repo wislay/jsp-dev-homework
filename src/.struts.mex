@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="struts2" location="225,10" size="280,245">
+    <action name="ShowAllUser" location="65,47" size="150,62">
+      <result name="succ">
+        <resourceEdge source="succ" routing="0" target="show_all_user.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="error.jsp" />
+      </result>
+    </action>
+    <action name="DeleteOneUserAction" location="65,152" size="150,62">
+      <result name="succ">
+        <resourceEdge source="succ" routing="1" target="show_all_user.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="error.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="show_all_user.jsp" path="/show_all_user.jsp" location="10,157" size="150,55" />
+  <webResource name="error.jsp" path="/error.jsp" location="570,52" size="150,55" />
+</Struts2Diagram>
+

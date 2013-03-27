@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.hs.Curriculum">
+  <id name="listNo">
+   <generator class="assigned"/>
+  </id>
+  <property name="termNo"/>
+  <property name="teacherNo"/>
+  <property name="classNo"/>
+  <property name="classroom"/>
+  <property name="courseNo"/>
+  <property name="startWeek"/>
+  <property name="endWeek"/>
+  <property name="startClass"/>
+  <property name="endClass"/>
+ </class>
+</hibernate-mapping>

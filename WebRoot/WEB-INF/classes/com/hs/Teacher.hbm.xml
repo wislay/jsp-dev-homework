@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.hs.Teacher">
+  <id column="teacherNo" name="teacherNo">
+   <generator class="assigned"/>
+  </id>
+  <property column="teacherName" generated="never" lazy="false" name="teacherName"/>
+  <property column="teacherGender" generated="never" lazy="false" name="teacherGender"/>
+  <property column="teacherEmail" generated="never" lazy="false" name="teacherEmail"/>
+  <property column="teacherMobile" generated="never" lazy="false" name="teacherMobile"/>
+ </class>
+</hibernate-mapping>

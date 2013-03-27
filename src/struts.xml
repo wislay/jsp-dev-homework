@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="struts2" extends="struts-default">
+
+        <action name="ShowAllUser" class="com.hs.action.ShowAllUser">
+			<result name="succ">/show_all_user.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="DeleteOneUserAction" class="com.hs.action.DeleteOneUserAction">
+			<result name="succ">/show_all_user.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="AddOneUserAction" class="com.hs.action.AddOneUserAction">
+			<result name="succ">/show_all_user.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="ShowOneUserForEdit" class="com.hs.action.ShowOneUserForEdit">
+			<result name="succ">/edit_one_user.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="ShowOneStudentForEdit" class="com.hs.action.ShowOneStudentForEdit">
+			<result name="succ">/edit_student_info.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="EditOneUserAction" class="com.hs.action.EditOneUserAction">
+			<result name="succ">/show_all_user.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="LoginAction" class="com.hs.action.LoginAction">
+			<result name="login_succ">/login_succ.jsp</result>
+			<result name="no_such_user">/no_user.jsp</result>
+			<result name="wrong_passwd">/wrong_passwd.jsp</result>
+        </action>
+        
+        <action name="LogoutAction" class="com.hs.action.LogoutAction">
+			<result name="logout_succ">/logout_succ.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="MainPageAction" class="com.hs.action.MainPageAction">
+			<result name="student_main">/student_main.jsp</result>
+			<result name="teacher_main">/teacher_main.jsp</result>
+			<result name="admin_main">/admin_main.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="login_first">/login_first.jsp</result>
+        </action>
+        
+        <action name="TestFuncAction" class="com.hs.action.TestFuncAction">
+			<result name="succ">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="ChangePasswordAction" class="com.hs.action.ChangePasswordAction">
+			<result name="changed" type="redirect">MainPageAction.action</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="EditStudentInfoAction" class="com.hs.action.EditStudentInfoAction">
+			<result name="succ">/student_main.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="DeleteOneCurriculumAction" class="com.hs.action.DeleteOneCurriculumAction">
+			<result name="succ" type="redirect">MainPageAction.action</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+        <action name="ShowOneCurriculumForEdit" class="com.hs.action.ShowOneCurriculumForEdit">
+			<result name="succ">/edit_curriculum_info.jsp</result>
+			<result name="fail">/error.jsp</result>
+        </action>
+        
+         <action name="EditCurriculumInfoAction" class="com.hs.action.EditCurriculumInfoAction">
+			<result name="succ">/admin_main.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+        <action name="AddOneCurriculumAction" class="com.hs.action.AddOneCurriculumAction">
+			<result name="succ">/admin_main.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+        
+    </package>
+
+</struts>
